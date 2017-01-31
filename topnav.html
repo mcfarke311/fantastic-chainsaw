@@ -55,16 +55,17 @@
 				height: 100%;
 				box-shadow: 0 0 5em 0;
 			}
-			#about-section {
+			#about-section,#contact-section {
 				width: 100%;
 				height: 100vh;
+				padding-top: 4em;
 			}
-			#about-section table {
+			#about-section table,#contact-section table {
 				width: 100%;
 				border: 0;
 				border-collapse: collapse;
 			}
-			#about-title,#portfolio-title {
+			#about-title,#portfolio-title,#contact-title {
 				text-align: center;
 				font-family: 'Pacifico', cursive;
 				padding: 0;
@@ -79,7 +80,7 @@
 				padding: 2em;
 				box-sizing: border-box;
 			}
-			#about-text {
+			#about-text,#contact-text {
 				box-shadow: 0 0 1em 0;
 				border-radius: 1em;
 				padding: 1em;
@@ -99,13 +100,42 @@
 				clear: both;
 				background-color: #a9927d;
 			}
+			#portfolio-display-table {
+				width: 100%;
+				border: 0;
+				border-collapse: collapse;
+			}
+			#website-view-window a {
+				text-decoration: none;
+			}
+			.website-view-window {
+				text-align: center;
+			}
+			.website-view-window img {
+				border-radius: 1em;
+				box-shadow: 0 0 1em 0;
+				margin: 1em;
+				box-sizing: border-box;
+			}
+			#contact-left {
+				width: 50%;
+				text-align: center;
+			}
+			#contact-right {
+				width: 50%;
+				text-align: center;
+			}
+			#contact-section {
+				height: 100vh;
+			}
+
 		</style>
 	</head>
 	<body>
 		<ul id="topnav">
-			<li><a href="#about-section">Contact</a></li>
+			<li><a href="#contact-section">Contact</a></li>
 			<li><a href="#portfolio-section">Portfolio</a></li>
-			<li><a href="#">About</a></li>
+			<li><a href="#about-section">About</a></li>
 		</ul>
 		<div id="main-content">
 			<div id="about-section">
@@ -122,6 +152,9 @@
 								<p>
 									Now I'm working through <a href="https://www.freecodecamp.com">FreeCodeCamp</a> to learn more about UI/UX, database, and web programming! :)
 								</p>
+								<p>
+									I enjoy working on my houses and spending time with friends and family. I can really have fun doing anything (c'mon! look at my picture :)). I am very results-oriented; that is the part of me that has been enjoying this so much! I get to put in the work and see the changes right before my eyes.
+								</p>
 							</div>
 						</td>
 						<td id="about-right">
@@ -132,33 +165,46 @@
 			</div>
 			<div id="portfolio-section">
 				<div id="portfolio-title">
-					<h1>Portfolio</h1>
+					<h1>PORTFOLIO</h1>
 				</div>
-				<img src="http://placehold.it/325x250?text=Portfolio+Site+Placeholder">
-				<p>
-					Tri-tip strip steak porchetta venison beef ribs, kevin meatball. Biltong ham hock andouille turducken. Ham cow sirloin, meatball salami ball tip pancetta ground round chuck ribeye venison biltong beef cupim t-bone. Chicken drumstick ball tip tri-tip short ribs ham pork chop strip steak t-bone jowl pork short loin corned beef rump. Cupim picanha spare ribs tail, flank andouille beef ribs venison chicken.
-				</p>
-				<p>
-					T-bone swine meatball leberkas pork loin, jerky ham pork belly venison hamburger alcatra jowl tri-tip bacon. Pork belly sirloin strip steak, turducken bresaola short loin meatball brisket jowl tenderloin burgdoggen jerky frankfurter leberkas landjaeger. Chuck t-bone turducken tongue, shank bresaola beef ribs meatball andouille tri-tip ham hock. Boudin ham sirloin swine capicola picanha alcatra beef ribs shankle pork chop short ribs. Alcatra swine meatball short ribs, turkey porchetta shoulder pancetta. Filet mignon beef kevin, tail corned beef tri-tip biltong shank brisket fatback cow porchetta ground round. Shoulder cow swine turkey short loin pork belly meatloaf.
-				</p>
-				<p>
-					Filet mignon doner frankfurter tongue rump drumstick cow kevin brisket alcatra kielbasa short ribs. Drumstick sausage spare ribs pork chop brisket venison cupim picanha frankfurter pastrami ball tip bacon. Meatball corned beef picanha rump. Bacon tongue salami, pastrami biltong pig doner rump ball tip cow. Salami strip steak beef ribs porchetta venison. Hamburger burgdoggen shank meatball picanha bresaola. Pastrami sirloin hamburger venison chuck pancetta shankle shank ball tip leberkas short ribs brisket salami short loin kevin.
-				</p>
-				<p>
-					Alcatra corned beef filet mignon bacon picanha ribeye shankle salami kevin burgdoggen sausage venison short loin jerky. Bacon spare ribs ham beef brisket hamburger. Biltong turkey spare ribs short loin, chicken picanha hamburger tri-tip brisket meatloaf pork loin ball tip doner. Pastrami jowl turducken hamburger t-bone. Drumstick tail pastrami ball tip bresaola ham ham hock turkey andouille flank boudin.
-				</p>
-				<p>
-					Biltong short loin kevin short ribs. Doner leberkas tenderloin alcatra. Pork loin doner pancetta cow. Shankle tri-tip pork belly andouille burgdoggen, pig chuck short ribs pancetta ham hock landjaeger.
-				</p>
-				<p>
-					Andouille short loin cupim sausage, capicola burgdoggen short ribs filet mignon. Biltong pork chop pork porchetta, leberkas jerky beef filet mignon. Picanha pork loin jerky, fatback chuck cow turkey burgdoggen leberkas drumstick. Ribeye strip steak brisket rump, jowl jerky chicken porchetta pastrami alcatra sirloin meatloaf. Fatback ribeye capicola rump landjaeger. Tri-tip fatback flank porchetta kielbasa, leberkas tail ground round sausage jowl drumstick pork belly shankle rump boudin. Beef burgdoggen jowl, pork belly spare ribs pig andouille shank pastrami tail ground round capicola tenderloin ribeye chicken.
-				</p>
-				<p>
-					Meatball alcatra beef ribs biltong jerky, meatloaf shoulder jowl venison chuck pork frankfurter filet mignon leberkas. Rump pancetta pig drumstick, venison picanha meatloaf kevin ham biltong salami shank beef turkey. Kielbasa beef ribs hamburger shankle landjaeger bacon jowl. Strip steak pork loin cow corned beef, pork belly ham hock venison andouille hamburger landjaeger short loin beef ribs pork chop meatball picanha. Ham hock tongue rump, landjaeger shank pastrami cow tri-tip jowl spare ribs. Ham jowl drumstick kielbasa tri-tip strip steak leberkas ball tip biltong. Jerky tenderloin capicola, cow leberkas meatball tail shoulder flank turkey swine ribeye.
-				</p>
-				<p>
-					Jowl hamburger salami sirloin cupim. Chuck ham hock turkey bacon sausage filet mignon spare ribs jowl biltong strip steak tongue capicola cow leberkas. Shoulder burgdoggen kielbasa swine strip steak ground round biltong tri-tip andouille boudin porchetta salami corned beef short ribs. Kielbasa tenderloin shank, bacon salami jerky jowl corned beef pork loin ball tip tongue filet mignon sirloin.
-				</p>
+				<table id="portfolio-display-table">
+					<tr>
+						<td class="website-view-window">
+							<a href="#"><img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder"></a>
+						</td>
+						<td class="website-view-window">
+							<a href="#"><img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder"></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="website-view-window">
+							<a href="#"><img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder"></a>
+						</td>
+						<td class="website-view-window">
+							<a href="#"><img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder"></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="contact-section">
+				<div id="contact-title">
+					<h1>CONTACT</h1>
+				</div>
+				<table>
+					<tr>
+						<td id="contact-left">
+							Form goes here
+						</td>
+						<td id="contact-right">
+							<div id="contact-text">
+								<p>
+									If you want to drop me a line and chat about the houses, or code, or coffee, or anything really -- use the form to the left :)
+									I will try my hardest to respond in a timely manner. Easier said than done!
+								</p>
+							</div>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</body>
