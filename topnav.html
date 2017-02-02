@@ -54,75 +54,28 @@
 			}
 			#about-section {
 				background-color: #5e503f;
-				height: 100vh;
+				min-height: 100vh;
 				padding: 0;
 				margin: 0;
+				width: 100%;
+			}
+			.table {
+				display: table;
+			}
+			.row {
+				display: table-row;
 				text-align: center;
 			}
-			#portfolio-section {
-				background-color: #a9927d;
-				height: 100vh;
-				padding: 0;
-				margin: 0;
+			.cell {
+				display: table-cell;
+				vertical-align: middle;
 				text-align: center;
-			}
-			#contact-section {
-				background-color: green;
-				height: 100vh;
-				padding: 0;
-				margin: 0;
-				text-align: center;
-			}
-			.center-vert {
-				text-align: center;
-				position: relative;
-				top: 50%;
-				transform: translateY(-50%);
-				max-height: 100%;
-			}
-			.center-vert h1 {
-				padding: 0;
-				margin: 0;
-				font-family: "Pacifico";
-			}
-			.center-vert table {
-				border-collapse: collapse;
-				border: 0;
-			}
-			#about-left {
 				width: 50%;
-				padding: 0 3em 0 3em;
-				margin: 0;
-				box-sizing: border-box;
 			}
 			#about-text {
-				background-color: #a9927d;
-				border-radius: 1em;
+				margin: 1em;
 				padding: 1em;
-				box-shadow: 0 0 1em 0;
-			}
-			#about-right {
-				width: 50%;
-				padding: 0;
-				margin: 0;
-			}
-			#about-right img {
-				border-radius: 100%;
-				width: 50%;
-				box-shadow: 0 0 1em 0;
-			}
-			#portfolio-table {
-				height: 100%;
-				width: 100%;
-				padding: 0;
-				margin: 0;
-				max-height: 80
-			}
-			#portfolio-table tr {
-				padding: 0;
-				margin: 0;
-			}
-			#portfolio-table tr td img {
+				background-color: #a9927d;
 				border-radius: 1em;
 				box-shadow: 0 0 1em 0;
 			}
@@ -135,57 +88,25 @@
 			<li><a href="#about-section">About</a></li>
 		</ul>
 		<div id="main-content">
-			<div id="about-section">
-				<div class="center-vert">
-					<h1>ABOUT</h1>
-					<table>
-						<tr>
-							<td id="about-left">
-								<div id="about-text">
-									<p>
-										Hi! I'm Kevin. I am an alumnus from Clemson University with a B.S. in Computer Engineering. I am trying to get some higher level programming experience in order to open up more opportunities. I have programmed in C/C++, Prolog, Flex and Bison, OCaml, Octave/Matlab, and Python.
-									</p>
-									<p>
-										Now I'm working through <a href="https://www.freecodecamp.com">FreeCodeCamp</a> to learn more about UI/UX, database, and web programming! :)
-									</p>
-									<p>
-										I enjoy working on my houses and spending time with friends and family. I can really have fun doing anything (c'mon! look at my picture :)). I am very results-oriented; that is the part of me that has been enjoying this so much! I get to put in the work and see the changes right before my eyes.
-									</p>
-								</div>
-							</td>
-							<td id="about-right">
-								<img src="./face_square.png">
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div id="portfolio-section">
-				<div class="center-vert">
-					<h1>PORTFOLIO</h1>
-					<table id="portfolio-table">
-						<tr>
-							<td>
-								<img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder">
-							</td>
-							<td>
-								<img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder">
-							</td>
-							<td>
-								<img src="http://placehold.it/325x250/5e503f?text=Portfolio+Site+Placeholder">
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div id="contact-section">
-				<div class="center-vert">
-					<h1>CONTACT</h1>
+			<div class="table" id="about-section">
+				<div class="row">
+					<div class="cell">
+						<div id="about-text">
+							<h1 style="font-family:Pacifico">About</h1>
+							<p>
+								Hi! I'm Kevin. I am an alumnus from Clemson University with a B.S. in Computer Engineering. I am trying to get some higher level programming experience in order to open up more opportunities. I have programmed in C/C++, Prolog, Flex and Bison, OCaml, Octave/Matlab, and Python.
+							</p>
+							<p>
+								Now I'm working through <a href="https://www.freecodecamp.com">FreeCodeCamp</a> to learn more about UI/UX, database, and web programming! :)
+							</p>
+							<p>
+								I enjoy working on my houses and spending time with friends and family. I can really have fun doing anything (c'mon! look at my picture :)). I am very results-oriented; that is the part of me that has been enjoying this (FreeCodeCamp) so much! I get to put in the work and see the changes right before my eyes.
+							</p>
+						</div>
+					</div>
+					<div class="cell">
+						<img src="./face_square.png" style="width: 80%; border-radius: 100%; box-shadow: 0 0 1em 0;">
+					</div>
 				</div>
 			</div>
 		</div>
