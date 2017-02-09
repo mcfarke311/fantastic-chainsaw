@@ -10,6 +10,7 @@
 		-->
 		<!--this is a test-->
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 		<style>
 			html, body {
 				margin: 0;
@@ -90,6 +91,40 @@
 				height: 100%;
 				width: 100%;
 			}
+			#contact-section {
+				background-color: #5e503f;
+				width: 100%;
+				min-height: 100vh;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+			}
+			input {
+				width: 100%;
+				padding: 1em;
+				margin: 0 0 1em 0;
+				box-sizing: border-box;
+			}
+			form input{
+				background-color: #5e503f;
+				border-style: none;
+				color: #f2f4f3;
+				border-radius: 1em;
+			}
+			form textarea {
+				background-color: #5e503f;
+				border-style: none;
+				color: #f2f4f3;
+				padding: 1em;
+				border-radius: 1em;
+			}
+			form button {
+				border-radius: 1em;
+				color: #f2f4f3;
+				background-color: #5e503f;
+				border-style: none;
+				box-shadow: 0 0 1em 0;
+			}
 		</style>
 	</head>
 	<body>
@@ -102,7 +137,7 @@
 			<div class="table" id="about-section">
 				<div class="row">
 					<div class="cell">
-						<div id="about-text">
+						<div id="about-text" style="margin: 0 0 0 10%">
 							<h1 style="font-family:Pacifico">About</h1>
 							<p>
 								Hi! I'm Kevin. I am an alumnus from Clemson University with a B.S. in Computer Engineering. I am trying to get some higher level programming experience in order to open up more opportunities. I have programmed in C/C++, Prolog, Flex and Bison, OCaml, Octave/Matlab, and Python.
@@ -116,7 +151,7 @@
 						</div>
 					</div>
 					<div class="cell">
-						<img src="./face_square.png" style="width: 80%; border-radius: 100%; box-shadow: 0 0 1em 0;">
+						<img src="./face_square.png" style="width: 80%; border-radius: 100%; box-shadow: 0 0 1em 0; margin: 0 10% 0 0">
 					</div>
 				</div>
 			</div>
@@ -140,6 +175,36 @@
 					</div>
 				</div>
 			</div>
+			<div class="table" id="contact-section">
+				<div class="row">
+					<div class="cell">
+						<div style="background-color: #a9927d; margin: 0 5% 0 5%; border-radius: 1em; box-shadow: 0 0 1em 0;">
+							<h1 style="font-family:Pacifico">Contact</h1>
+							<p style="padding: 1em 10% 1em 10%;">
+								Thank you for looking at my page! I hope you enjoyed looking over it as much as I enjoyed making it and learning all of this new stuff! If you would like to know any more information, feel free to message me here or link up with me on any of the social media interfaces that I have linked at the bottom of the page. If you want to meet up here in Columbia, SC to work on some FreeCodeCamp stuff, that would be cool too!
+							</p>
+							<form style="display: inline-block; text-align: center; width: 80%">
+								<div>
+								<input type="text" placeholder="Full Name" name="name">
+								</div>
+								<div>
+								<input type="text" placeholder="Email Address" name="email">
+								</div>
+								<div>
+								<textarea name="message" rows="10" cols="30" style="width: 100%; padding: 0; margin: 0; box-sizing: border-box">  Say 'hello!' and ask me a question :)</textarea>
+								</div>
+								<button type="submit" style="padding: 1em; width: 100%; margin: 1em 0 1em 0">Send Your Message!</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<ul>
+			<li><a><i class="fa fa-facebook" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-twitter" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-github" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-linkedin-square" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
+		</ul>
 	</body>
 </html>
