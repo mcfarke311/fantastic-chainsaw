@@ -18,6 +18,34 @@
 				background-color: #22333b;
 				box-shadow: 0 0 5em 0 inset;
 			}
+			#bottom_bar {
+				background-color: #0a0908;
+				list-style-type: none;
+				padding: 1em 10vw 1em 10vw;
+				margin: 0px;
+				position: absolute;
+				width: 100%;
+				right: 0;
+				box-sizing: border-box;
+				text-align: right;
+			}
+			#bottom_bar li {
+				float: right;
+				margin: 0;
+				padding: 0;
+			}
+			#bottom_bar i {
+				font-size: 5em;
+			}
+			#bottom_bar li a {
+				text-decoration: none;
+				margin: 0;
+				padding: 1em;
+				color: #f2f4f3;
+			}
+			#bottom_bar li a:hover {
+				color: #22333b;
+			}
 			#topnav {
 				background-color: #0a0908;
 				list-style-type: none;
@@ -187,7 +215,7 @@
 								<div>
 								<input type="text" placeholder="Full Name" name="name">
 								</div>
-								<div>
+								<div>	
 								<input type="text" placeholder="Email Address" name="email">
 								</div>
 								<div>
@@ -200,11 +228,11 @@
 				</div>
 			</div>
 		</div>
-		<ul>
-			<li><a><i class="fa fa-facebook" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
-			<li><a><i class="fa fa-twitter" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
-			<li><a><i class="fa fa-github" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
-			<li><a><i class="fa fa-linkedin-square" style="color:#f2f4f3;" aria-hidden="true"></i></a></li>
+		<ul id="bottom_bar">
+			<li><a href="https://www.facebook.com/kevin.a.mcfarland"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="https://twitter.com/manlify_me"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="https://github.com/mcfarke311"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/mcfarke"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 		</ul>
 	</body>
 </html>
